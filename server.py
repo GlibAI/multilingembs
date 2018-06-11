@@ -22,7 +22,6 @@ def getEmbeddings():
 		sent = d[sent_key]
 		lang = d[l_key]
 		ret_obj.append({sent_key + '_embeddings':utils.fetch_vectors(lang, sent)})
-	print(ret_obj)
 	#print(src_vec)
 	# sim = utils.similarity(src_vec, trgt_vec)
 	# return json.dumps({"src_vec": src_vec, "trgt_vec": trgt_vec, "similarity":sim})
